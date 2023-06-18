@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Theater App</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- Select Movie -->
+    <section class="movies">
+      <div class="movie-container">
+        <label for="movie-select">Select Your Movie: </label>
+        <select class="movie-select" id="select-movie">
+          <option value="45">Top Gun 2</option>
+          <option value="35">Avengers</option>
+          <option value="45">Iron Man</option>
+          <option value="25">Angry Bird</option>
+          <option value="15">Hackers</option>
+        </select>
+      </div>
+    </section>
+
+
+    <!-- Available, Selected & Occupied Seats For Legend-->
+    <section class="seat-selects">
+      <ul class="legend">
+        <li>
+          <div class="seat"></div>
+          <small>Available</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Screen -->
+    <section class="lcd-screen">
+      <div class="screen">
+        <video src="movies/0.mp4" id="video" style="width: 100%; border: 2px solid #4f709cdd;" controls autoplay
+          loop></video>
+        <small
+          style="font-size:  6rem; display: flex; justify-content: center; position:  relative; top: -0.75em; height:  0;">.</small>
+      </div>
+    </section>
+
+    <!-- Seating -->
+    <section class="seats">
+      <!-- Seats Row 1 -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <!-- Seats Row 2 -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+
+      <!-- Seats Row 3 -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <!-- Seats Row 4 -->
+      <div class="row">
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <!-- Seats Row 5 -->
+      <div class="row">
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+      </div>
+
+      <!-- Seats Row 6 -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+    </section>
+
+    <!-- Costing For Selected Seats -->
+    <section class="totaling">
+      <p class="total-seats-cost">You've selected <small class="count" id="count">0</small> seats, Your total cost is
+        <small class="total" id="total">0</small>$</p>
+    </section>
+  </main>
+</body>
+
+</html>
